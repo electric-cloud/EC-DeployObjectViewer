@@ -18,6 +18,8 @@
    2.1   - Rename Deploy and CDM to Flow
    2.1.1 - Made HTML safe (</opt/... caused problems) and added Full Inventory
    2.2   - Added EC- to the plugin name
+   2.2.1 - Update Full Inventory
+   2.3   - Initial Version of Pipeline Run viewer and remove version from output jar file name
 	-->
 <project name="plugin" default="package" basedir=".">
   <description>
@@ -26,7 +28,7 @@
 
   <!-- Plugin-specific properties -->
   <property name="pluginKey" value="EC-DeployObjectViewer" />
-  <property name="pluginVersion" value="2.2" />
+  <property name="pluginVersion" value="2.3" />
   <!-- The following requires and edit to buildTargets in the SDK v2.0 to 
 		actually affect the plugin file name
   <property name="pluginFileName" value="${pluginKey}-${pluginVersion}" />
@@ -56,7 +58,7 @@
 	  description="Copies the jar file to to the top level">
 	<copy overwrite="yes"
 	  file="${out.dir}/${pluginKey}.jar"
-	  toFile="../${pluginKey}-${pluginVersion}.jar"/>
+	  toFile="../${pluginKey}.jar"/>
 	</target>
   
 </project>

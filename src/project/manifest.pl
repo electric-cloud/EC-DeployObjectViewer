@@ -7,6 +7,7 @@
   ['//*[propertyName="v5"]/value','tierMappingView.pl'],
   ['//*[propertyName="v6"]/value','Create JSON Model (pure json).pl'],
   ['//*[propertyName="v7"]/value','fullinventory.pl'],
+  ['//*[propertyName="v8"]/value','pipelineRun.pl'],
 );
 
 

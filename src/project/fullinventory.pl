@@ -232,4 +232,4 @@ foreach my $application (@{$applications->{application}}) {
 	</table>
 	);
 }
-print $XHTML if $DEBUG;
+#print $XHTML if $DEBUG;

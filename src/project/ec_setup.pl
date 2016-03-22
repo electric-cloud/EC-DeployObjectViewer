@@ -9,7 +9,8 @@ if ($promoteAction eq 'promote') {
 		"Components",
 		"Tier Mappings",
 		"JSON Model",
-		"Full Inventory"
+		"Full Inventory",
+		"Pipeline Runs"
 		);
 
 	my $tabIndex = 1;
@@ -24,7 +25,7 @@ if ($promoteAction eq 'promote') {
 	
 } elsif ($promoteAction eq 'demote') {
     $view->remove("Flow Tools");
-	for (1..7) {
+	for (1..8) {
 		$commander->setProperty("/server/unplug/v$_",'$'."[/plugins/unplug/project/v_example$_]",{description=>"Content to be displayed by the unplug plugin subpage $_"});
 	}
 }

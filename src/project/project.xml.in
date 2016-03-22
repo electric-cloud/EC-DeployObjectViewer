@@ -140,6 +140,10 @@
             <propertyName>v7</propertyName>
             <value></value>
           </property>
+		  <property>
+            <propertyName>v8</propertyName>
+            <value></value>
+          </property>
         </propertySheet>
       </property>
      </propertySheet>
